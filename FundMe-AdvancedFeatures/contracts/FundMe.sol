@@ -32,7 +32,7 @@ contract FundMe {
 
         //able to set a min fund amount in usd
         //1. how to send eth to this contract
-        require(msg.value.getConversionRate() >= MINIMUM_USD, "Didn't send enough"); // 1e18 = 1* 10^(18) uint of wei
+        require(msg.value.getConversionRate() >= MINIMUM_USD, "Didnt send enough"); // 1e18 = 1* 10^(18) uint of wei
         //revert messeage: undo any action before, and send remaining gas back
 
         funders.push(msg.sender);
